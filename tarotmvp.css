@@ -54,3 +54,30 @@ h2{
   justify-content: center;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 10rem;
+  height: 10rem;
+  
+}
+
+@media screen {
+  
+}
+
+form button {
+  height: 35px;
+  font-size: 15px;
+  color:rgb(232, 229, 235);
+  cursor: pointer;
+  padding: 0 20px;
+  margin-top: 10px;
+  background: rgb(49, 6, 87);
+  border: none;
+}
