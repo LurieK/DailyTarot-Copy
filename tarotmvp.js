@@ -79,7 +79,7 @@
         { Name: 'Ace of Pentacles',img: "./untitled folder/sm_RWSa-P-0A.png", text: 'this is the description of the card' },
         { Name: 'Ace of Swords',img: "./untitled folder/sm_RWSa-S-0A.png", text: 'this is the description of the card' }
     ]
-        ;
+        
     
   
 
@@ -94,3 +94,14 @@ button.addEventListener('click', function (){
     cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;"><h4>${randomCard.text}<h4>`
 });
 
+
+//dropdown
+
+const dropDown = document.querySelector('.mycard');
+
+
+dropDown.addEventListener('change', function (){
+    const selectValue= this.value;
+
+    
+})
