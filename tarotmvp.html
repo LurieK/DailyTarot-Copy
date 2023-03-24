@@ -4,21 +4,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,500;1,100&family=Dancing+Script:wght@400;700&family=Raleway:ital,wght@0,100;0,300;0,600;1,200;1,700&display=swap" rel="stylesheet">
+
     <title>Master the Tarot</title>
     
 </head>
+
 <html>
 
-<body></body>
 <header class="title" id="title">
     <h1>Master the Tarot</h1>
 </header>
 
 
-<div class="content">
-    <h2>Card of the Day</h2>
-    <button class="button">Select my Card</button>
-    <p>or</p>
+<body>
+<div class="tarot"></div>
+    <div class="content">
+        <h2>Card of the Day</h2>
+        <button class="button">Select my Card</button>
+        <p>or</p>
     <select id="mycard" class="mycard">
         <option class="select"> Pick my own Card</option>
         <option value="fool"> The Fool</option>
@@ -100,15 +103,28 @@
         <option value="kc"> King of Cups</option>
         
     </select>
+    </div>
+    
+    
+    <div>
     <h3 class="card-choice"></h3>
    </div> 
-   
-   <form>
+</div>
+
+<div class="astrology">
+    <H2>Your Chart</H2>
+    <iframe width="100%" scrolling="no" class="astroiframe" style="border:0" src="https://astro-charts.com/shop/widget/iframe/{ site_key }/" > 
+    </iframe> <script type="text/javascript" src="https://astro-charts.com/client/common/widget/js/iframe.min.js"> </script>
+    </div>
+
+<form>
         <label for="entry"><h2>Journal Entry:</h2></label>
         <textarea id="entry" name="entry"></textarea>
         <button type="submit">Save</button>
         <p id="date"></p>
-    </form>
+</form>
+
+
     
 </body>
     <script src="./tarotmvp.js"></script>
