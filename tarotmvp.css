@@ -1,14 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
-@font-face {
-  font-family: 'Krysttal Spears';
-  src: url('./Krysttal\ Spears\ Free.woff') format('woff');
+h1 {
+  font-family: 'Almendra', serif;
+  font-size: 100px;
+  color:rgba(97, 6, 97, 0.75);
+  text-align: center;
   font-weight: normal;
-  font-style: normal;
 }
 
+h2 {
+  font-family: 'Almendra', serif;
+}
 
+h3 {
+  font-family: 'Almendra', serif;
+}
 #title h1{
-  font-family: 'krysttal Spears';
+  
   font-size: 100px;
   color:rgba(97, 6, 97, 0.75);
   text-align: center;
@@ -16,9 +22,7 @@
   
 }
 body {
-  
-
-  background-color: #f1f3f4;
+  background-color: whitesmoke;
   font-size: 0.9rem;
   color: rgb(49, 6, 87);
 }
@@ -37,6 +41,17 @@ h3{
   flex-direction: column;
   
 }
+
+.title {
+  background-image: url(./img/viva-luna-studios-1dIh5H5BMvI-unsplash.jpg);
+  background-size: 175%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  padding: 20px;
+  
+
+}
 .content{
   display: flex;
   align-items: center;
@@ -47,6 +62,7 @@ h3{
 button {
   height: 65px;
   font-size: 22px;
+  
   color:rgb(232, 229, 235);
   cursor: pointer;
   padding: 0 20px;
@@ -56,7 +72,7 @@ button {
 }
 
 h2{
-  font-family: 'raleway';
+
   font-size: 30px;
   font-weight: 400;
   justify-content: center;
@@ -72,25 +88,30 @@ h2{
   background: rgb(217, 214, 221);
   border-color: rgb(49, 6, 87);
   
+
 }
-form {
+
+.card-meaing {
+
+}
+/* form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-textarea {
+/* textarea {
   width: 20rem;
   height: 20rem;
   
-}
+} */
 
 @media screen {
   
 }
 
-form button {
+/* form button {
   height: 35px;
   font-size: 15px;
   color:rgb(232, 229, 235);
@@ -99,6 +120,6 @@ form button {
   margin-top: 10px;
   background: rgb(49, 6, 87);
   border: none;
-}
+} */
 
 
