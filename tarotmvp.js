@@ -365,17 +365,26 @@ const options = {
 	},
 	body: JSON.stringify({
 		query: `You are a expert Tarot reader.  I will give you a card and you will tell me what it means as a prediction
-        for the day. The card is the ${card}.`
+        for the day. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.`
 	})
 };
 
 try {
 	const response = await fetch(url, options);
 	const result = await response.text();
-	console.log(result);
+	const resultObj = JSON.parse(result);
+    const resultText = resultObj.response;
+    displayMeaning(resultText);
 } catch (error) {
 	console.error(error);
 }
 }
 
+function displayMeaning(meaning){
+    const cardMeaning = document.getElementById('card-meaning');
+    
+    const dailyReading = 
+    `<h4> ${meaning}</h4>`;
 
+    cardMeaning.innerHTML = dailyReading;
+}
