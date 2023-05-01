@@ -1,84 +1,84 @@
 // import cards from './cards.js';
 
 const cards = [ 
-    { Name: 'Fool 0', img: "./untitled folder/sm_RWSa-T-00.png", text: 'this is the description of the card' },
-    { Name: 'The Magician I', img: './untitled folder/sm_RWSa-T-01.png', text: 'this is the description of the card' },
-    { Name: 'The High Priestess II', img: "./untitled folder/sm_RWSa-T-02.png", text: 'this is the description of the card' },
-    { Name: 'The Empress III', img: "./untitled folder/sm_RWSa-T-03.png", text: 'this is the description of the card' },
-    { Name: 'The Emperor IV', img: "./untitled folder/sm_RWSa-T-04.png", text: 'this is the description of the card' },
-    { Name: 'The Heirophant V', img: "./untitled folder/sm_RWSa-T-05.png", text: 'this is the description of the card' },
-    { Name: 'The Lovers VI', img: "./untitled folder/sm_RWSa-T-06.png", text: 'this is the description of the card' },
-    { Name: 'The Chariot VII', img: "./untitled folder/sm_RWSa-T-07.png", text: 'this is the description of the card' },
-    { Name: 'Strength VIII', img: "./untitled folder/sm_RWSa-T-08.png", text: 'this is the description of the card' },
-    { Name: 'The Hermit IX', img: "./untitled folder/sm_RWSa-T-09.png", text: 'this is the description of the card' },
-    { Name: 'The Wheel of Fortune X', img: "./untitled folder/sm_RWSa-T-10.png", text: 'this is the description of the card' },
-    { Name: 'Justice XI', img: "./untitled folder/sm_RWSa-T-11.png", text: 'this is the description of the card' },
-    { Name: 'The Hanged Man XII', img: "./untitled folder/sm_RWSa-T-12.png", text: 'this is the description of the card' },
-    { Name: 'Death XIII', img: "./untitled folder/sm_RWSa-T-13.png", text: 'this is the description of the card' },
-    { Name: 'Temprence XIV', img: "./untitled folder/sm_RWSa-T-14.png", text: 'this is the description of the card' },
-    { Name: 'The Devil XV', img: "./untitled folder/sm_RWSa-T-15.png", text: 'this is the description of the card' },
-    { Name: 'The Tower XVI', img: "./untitled folder/sm_RWSa-T-16.png", text: 'this is the description of the card' },
-    { Name: 'The Star XVII', img: "./untitled folder/sm_RWSa-T-17.png", text: 'this is the description of the card' },
-    { Name: 'The Moon XVIII', img: "./untitled folder/sm_RWSa-T-18.png", text: 'this is the description of the card' },
-    { Name: 'The Sun XIX', img: "./untitled folder/sm_RWSa-T-19.png", text: 'this is the description of the card' },
-    { Name: 'Judgement XX', img: "./untitled folder/sm_RWSa-T-20.png", text: 'this is the description of the card' },
-    { Name: 'The World XXI', img: "./untitled folder/sm_RWSa-T-21.png", text: 'this is the description of the card' },
-    { Name: 'Ace of Swords', img: "./untitled folder/sm_RWSa-S-0A.png", text: 'this is the description of the card' },
-    { Name: 'Two of Swords', img: "./untitled folder/sm_RWSa-S-02.png", text: 'this is the description of the card' },
-    { Name: 'Three of Swords', img: "./untitled folder/sm_RWSa-S-03.png", text: 'this is the description of the card' },
-    { Name: 'Four of Swords', img: "./untitled folder/sm_RWSa-S-04.png", text: 'this is the description of the card' },
-    { Name: 'Five of Swords', img: "./untitled folder/sm_RWSa-S-05.png", text: 'this is the description of the card' },
-    { Name: 'Six of Swords', img: "./untitled folder/sm_RWSa-S-06.png", text: 'this is the description of the card' },
-    { Name: 'Seven of Swords', img: "./untitled folder/sm_RWSa-S-07.png", text: 'this is the description of the card' },
-    { Name: 'Eight of Swords', img: "./untitled folder/sm_RWSa-S-08.png", text: 'this is the description of the card' },
-    { Name: 'Nine of Swords', img: "./untitled folder/sm_RWSa-S-09.png", text: 'this is the description of the card' },
-    { Name: 'Ten of Swords', img: "./untitled folder/sm_RWSa-S-10.png", text: 'this is the description of the card' },
-    { Name: 'Page of Swords', img: "./untitled folder/sm_RWSa-S-J1.png", text: 'this is the description of the card' },
-    { Name: 'Knight of Swords', img: "./untitled folder/sm_RWSa-S-J2.png", text: 'this is the description of the card' },
-    { Name: 'Queen of Swords', img: "./untitled folder/sm_RWSa-S-QU.png", text: 'this is the description of the card' },
-    { Name: 'King of Swords', img: "./untitled folder/sm_RWSa-S-KI.png", text: 'this is the description of the card' },
-    { Name: 'Ace of Wands', img: "./untitled folder/sm_RWSa-W-0A.png", text: 'this is the description of the card' },
-    { Name: 'Two of Wands', img: "./untitled folder/sm_RWSa-W-02.png", text: 'this is the description of the card' },
-    { Name: 'Three of Wands', img: "./untitled folder/sm_RWSa-W-03.png", text: 'this is the description of the card' },
-    { Name: 'Four of Wands', img: "./untitled folder/sm_RWSa-W-04.png", text: 'this is the description of the card' },
-    { Name: 'Five of Wands', img: "./untitled folder/sm_RWSa-W-05.png", text: 'this is the description of the card' },
-    { Name: 'Six of Wands', img: "./untitled folder/sm_RWSa-W-06.png", text: 'this is the description of the card' },
-    { Name: 'Seven of Wands', img: "./untitled folder/sm_RWSa-W-07.png", text: 'this is the description of the card' },
-    { Name: 'Eight of Wands', img: "./untitled folder/sm_RWSa-W-08.png", text: 'this is the description of the card' },
-    { Name: 'Nine of Wands', img: "./untitled folder/sm_RWSa-W-09.png", text: 'this is the description of the card' },
-    { Name: 'Ten of Wands', img: "./untitled folder/sm_RWSa-W-10.png", text: 'this is the description of the card' },
-    { Name: 'Page of Wands', img: "./untitled folder/sm_RWSa-W-J1.png", text: 'this is the description of the card' },
-    { Name: 'Knight of Wands', img: "./untitled folder/sm_RWSa-W-J2.png", text: 'this is the description of the card' },
-    { Name: 'Queen of Wands', img: "./untitled folder/sm_RWSa-W-QU.png", text: 'this is the description of the card' },
-    { Name: 'King of Wands', img: "./untitled folder/sm_RWSa-W-KI.png", text: 'this is the description of the card' },
-    { Name: 'Ace of Pentacles', img: './untitled folder/sm_RWSa-P-0A.png', text: 'this is the description of the card' },
-    { Name: 'Two of Pentacles', img: './untitled folder/sm_RWSa-P-02.png', text: 'this is the description of the card' },
-    { Name: 'Three of Pentacles', img: './untitled folder/sm_RWSa-P-03.png', text: 'this is the description of the card' },
-    { Name: 'Four of Pentacles', img: './untitled folder/sm_RWSa-P-04.png', text: 'this is the description of the card' },
-    { Name: 'Five of Pentacles', img: './untitled folder/sm_RWSa-P-05.png', text: 'this is the description of the card' },
-    { Name: 'Six of Pentacles', img: './untitled folder/sm_RWSa-P-06.png', text: 'this is the description of the card' },
-    { Name: 'Seven of Pentacles', img: './untitled folder/sm_RWSa-P-07.png', text: 'this is the description of the card' },
-    { Name: 'Eight of Pentacles', img: './untitled folder/sm_RWSa-P-08.png', text: 'this is the description of the card' },
-    { Name: 'Nine of Pentacles', img: './untitled folder/sm_RWSa-P-09.png', text: 'this is the description of the card' },
-    { Name: 'Ten of Pentacles', img: './untitled folder/sm_RWSa-P-10.png', text: 'this is the description of the card' },
-    { Name: 'Page of Pentacles', img: './untitled folder/sm_RWSa-P-J1.png', text: 'this is the description of the card' },
-    { Name: 'Knight of Pentacles', img: './untitled folder/sm_RWSa-P-J2.png', text: 'this is the description of the card' },
-    { Name: 'Queen of Pentacles', img: './untitled folder/sm_RWSa-P-QU.png', text: 'this is the description of the card' },
-    { Name: 'King of Pentacles', img: './untitled folder/sm_RWSa-P-KI.png', text: 'this is the description of the card' },
-    { Name: 'Ace of Cups', img: "./untitled folder/sm_RWSa-C-0A.png", text: 'this is the description of the card' },
-    { Name: 'Two of Cups', img: "./untitled folder/sm_RWSa-C-02.png", text: 'this is the description of the card' },
-    { Name: 'Three of Cups', img: "./untitled folder/sm_RWSa-C-03.png", text: 'this is the description of the card' },
-    { Name: 'Four of Cups', img: "./untitled folder/sm_RWSa-C-04.png", text: 'this is the description of the card' },
-    { Name: 'Five of Cups', img: "./untitled folder/sm_RWSa-C-05.png", text: 'this is the description of the card' },
-    { Name: 'Six of Cups', img: "./untitled folder/sm_RWSa-C-06.png", text: 'this is the description of the card' },
-    { Name: 'Seven of Cups', img: "./untitled folder/sm_RWSa-C-07.png", text: 'this is the description of the card' },
-    { Name: 'Eight of Cups', img: "./untitled folder/sm_RWSa-C-08.png", text: 'this is the description of the card' },
-    { Name: 'Nine of Cups', img: "./untitled folder/sm_RWSa-C-09.png", text: 'this is the description of the card' },
-    { Name: 'Ten of Cups', img: "./untitled folder/sm_RWSa-C-10.png", text: 'this is the description of the card' },
-    { Name: 'Page of Cups', img: "./untitled folder/sm_RWSa-C-J1.png", text: 'this is the description of the card' },
-    { Name: 'Knight of Cups', img: "./untitled folder/sm_RWSa-C-J2.png", text: 'this is the description of the card' },
-    { Name: 'Queen of Cups', img: "./untitled folder/sm_RWSa-C-QU.png", text: 'this is the description of the card' },
-    { Name: 'King of Cups', img: "./untitled folder/sm_RWSa-C-KI.png", text: 'this is the description of the card' },
+    { Name: 'Fool 0', img: "./untitled folder/sm_RWSa-T-00.png" },
+    { Name: 'The Magician I', img: './untitled folder/sm_RWSa-T-01.png' },
+    { Name: 'The High Priestess II', img: "./untitled folder/sm_RWSa-T-02.png" },
+    { Name: 'The Empress III', img: "./untitled folder/sm_RWSa-T-03.png" },
+    { Name: 'The Emperor IV', img: "./untitled folder/sm_RWSa-T-04.png" },
+    { Name: 'The Heirophant V', img: "./untitled folder/sm_RWSa-T-05.png"},
+    { Name: 'The Lovers VI', img: "./untitled folder/sm_RWSa-T-06.png" },
+    { Name: 'The Chariot VII', img: "./untitled folder/sm_RWSa-T-07.png" },
+    { Name: 'Strength VIII', img: "./untitled folder/sm_RWSa-T-08.png" },
+    { Name: 'The Hermit IX', img: "./untitled folder/sm_RWSa-T-09.png" },
+    { Name: 'The Wheel of Fortune X', img: "./untitled folder/sm_RWSa-T-10.png"},
+    { Name: 'Justice XI', img: "./untitled folder/sm_RWSa-T-11.png" },
+    { Name: 'The Hanged Man XII', img: "./untitled folder/sm_RWSa-T-12.png" },
+    { Name: 'Death XIII', img: "./untitled folder/sm_RWSa-T-13.png" },
+    { Name: 'Temprence XIV', img: "./untitled folder/sm_RWSa-T-14.png" },
+    { Name: 'The Devil XV', img: "./untitled folder/sm_RWSa-T-15.png"},
+    { Name: 'The Tower XVI', img: "./untitled folder/sm_RWSa-T-16.png"},
+    { Name: 'The Star XVII', img: "./untitled folder/sm_RWSa-T-17.png" },
+    { Name: 'The Moon XVIII', img: "./untitled folder/sm_RWSa-T-18.png" },
+    { Name: 'The Sun XIX', img: "./untitled folder/sm_RWSa-T-19.png" },
+    { Name: 'Judgement XX', img: "./untitled folder/sm_RWSa-T-20.png" },
+    { Name: 'The World XXI', img: "./untitled folder/sm_RWSa-T-21.png" },
+    { Name: 'Ace of Swords', img: "./untitled folder/sm_RWSa-S-0A.png" },
+    { Name: 'Two of Swords', img: "./untitled folder/sm_RWSa-S-02.png" },
+    { Name: 'Three of Swords', img: "./untitled folder/sm_RWSa-S-03.png"},
+    { Name: 'Four of Swords', img: "./untitled folder/sm_RWSa-S-04.png" },
+    { Name: 'Five of Swords', img: "./untitled folder/sm_RWSa-S-05.png" },
+    { Name: 'Six of Swords', img: "./untitled folder/sm_RWSa-S-06.png" },
+    { Name: 'Seven of Swords', img: "./untitled folder/sm_RWSa-S-07.png" },
+    { Name: 'Eight of Swords', img: "./untitled folder/sm_RWSa-S-08.png" },
+    { Name: 'Nine of Swords', img: "./untitled folder/sm_RWSa-S-09.png" },
+    { Name: 'Ten of Swords', img: "./untitled folder/sm_RWSa-S-10.png" },
+    { Name: 'Page of Swords', img: "./untitled folder/sm_RWSa-S-J1.png" },
+    { Name: 'Knight of Swords', img: "./untitled folder/sm_RWSa-S-J2.png" },
+    { Name: 'Queen of Swords', img: "./untitled folder/sm_RWSa-S-QU.png" },
+    { Name: 'King of Swords', img: "./untitled folder/sm_RWSa-S-KI.png" },
+    { Name: 'Ace of Wands', img: "./untitled folder/sm_RWSa-W-0A.png" },
+    { Name: 'Two of Wands', img: "./untitled folder/sm_RWSa-W-02.png" },
+    { Name: 'Three of Wands', img: "./untitled folder/sm_RWSa-W-03.png" },
+    { Name: 'Four of Wands', img: "./untitled folder/sm_RWSa-W-04.png" },
+    { Name: 'Five of Wands', img: "./untitled folder/sm_RWSa-W-05.png" },
+    { Name: 'Six of Wands', img: "./untitled folder/sm_RWSa-W-06.png" },
+    { Name: 'Seven of Wands', img: "./untitled folder/sm_RWSa-W-07.png"},
+    { Name: 'Eight of Wands', img: "./untitled folder/sm_RWSa-W-08.png" },
+    { Name: 'Nine of Wands', img: "./untitled folder/sm_RWSa-W-09.png" },
+    { Name: 'Ten of Wands', img: "./untitled folder/sm_RWSa-W-10.png" },
+    { Name: 'Page of Wands', img: "./untitled folder/sm_RWSa-W-J1.png" },
+    { Name: 'Knight of Wands', img: "./untitled folder/sm_RWSa-W-J2.png" },
+    { Name: 'Queen of Wands', img: "./untitled folder/sm_RWSa-W-QU.png"},
+    { Name: 'King of Wands', img: "./untitled folder/sm_RWSa-W-KI.png"},
+    { Name: 'Ace of Pentacles', img: './untitled folder/sm_RWSa-P-0A.png' },
+    { Name: 'Two of Pentacles', img: './untitled folder/sm_RWSa-P-02.png' },
+    { Name: 'Three of Pentacles', img: './untitled folder/sm_RWSa-P-03.png' },
+    { Name: 'Four of Pentacles', img: './untitled folder/sm_RWSa-P-04.png' },
+    { Name: 'Five of Pentacles', img: './untitled folder/sm_RWSa-P-05.png' },
+    { Name: 'Six of Pentacles', img: './untitled folder/sm_RWSa-P-06.png' },
+    { Name: 'Seven of Pentacles', img: './untitled folder/sm_RWSa-P-07.png'},
+    { Name: 'Eight of Pentacles', img: './untitled folder/sm_RWSa-P-08.png' },
+    { Name: 'Nine of Pentacles', img: './untitled folder/sm_RWSa-P-09.png' },
+    { Name: 'Ten of Pentacles', img: './untitled folder/sm_RWSa-P-10.png' },
+    { Name: 'Page of Pentacles', img: './untitled folder/sm_RWSa-P-J1.png' },
+    { Name: 'Knight of Pentacles', img: './untitled folder/sm_RWSa-P-J2.png' },
+    { Name: 'Queen of Pentacles', img: './untitled folder/sm_RWSa-P-QU.png'},
+    { Name: 'King of Pentacles', img: './untitled folder/sm_RWSa-P-KI.png' },
+    { Name: 'Ace of Cups', img: "./untitled folder/sm_RWSa-C-0A.png" },
+    { Name: 'Two of Cups', img: "./untitled folder/sm_RWSa-C-02.png" },
+    { Name: 'Three of Cups', img: "./untitled folder/sm_RWSa-C-03.png" },
+    { Name: 'Four of Cups', img: "./untitled folder/sm_RWSa-C-04.png" },
+    { Name: 'Five of Cups', img: "./untitled folder/sm_RWSa-C-05.png" },
+    { Name: 'Six of Cups', img: "./untitled folder/sm_RWSa-C-06.png" },
+    { Name: 'Seven of Cups', img: "./untitled folder/sm_RWSa-C-07.png" },
+    { Name: 'Eight of Cups', img: "./untitled folder/sm_RWSa-C-08.png"},
+    { Name: 'Nine of Cups', img: "./untitled folder/sm_RWSa-C-09.png" },
+    { Name: 'Ten of Cups', img: "./untitled folder/sm_RWSa-C-10.png" },
+    { Name: 'Page of Cups', img: "./untitled folder/sm_RWSa-C-J1.png" },
+    { Name: 'Knight of Cups', img: "./untitled folder/sm_RWSa-C-J2.png" },
+    { Name: 'Queen of Cups', img: "./untitled folder/sm_RWSa-C-QU.png" },
+    { Name: 'King of Cups', img: "./untitled folder/sm_RWSa-C-KI.png" },
 
 ]
 
@@ -112,188 +112,188 @@ dropDown.addEventListener('change', function (){
 
     switch (selectValue) {
         case 'fool':
-            cardChoice.innerHTML = `<h3>${cards[0].Name}</h3><img src="${cards[0].img}" alt="${cards[0].Name}" style="display: block;"><h4>${cards[0].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[0].Name}</h3><img src="${cards[0].img}" alt="${cards[0].Name}" style="display: block;">`;
             break;
         case 'magician':
-            cardChoice.innerHTML = `<h3>${cards[1].Name}</h3><img src="${cards[1].img}" alt="${cards[1].Name}" style="display: block;"><h4>${cards[1].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[1].Name}</h3><img src="${cards[1].img}" alt="${cards[1].Name}" style="display: block;">`;
             break;
         case 'priestess':
-            cardChoice.innerHTML = `<h3>${cards[2].Name}</h3><img src="${cards[2].img}" alt="${cards[2].Name}" style="display: block;"><h4>${cards[2].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[2].Name}</h3><img src="${cards[2].img}" alt="${cards[2].Name}" style="display: block;">`;
             break;
         case 'empress':
-            cardChoice.innerHTML = `<h3>${cards[3].Name}</h3><img src="${cards[3].img}" alt="${cards[3].Name}" style="display: block;"><h4>${cards[3].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[3].Name}</h3><img src="${cards[3].img}" alt="${cards[3].Name}" style="display: block;">`;
             break;
         case 'emperor':
-            cardChoice.innerHTML = `<h3>${cards[4].Name}</h3><img src="${cards[4].img}" alt="${cards[4].Name}" style="display: block;"><h4>${cards[4].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[4].Name}</h3><img src="${cards[4].img}" alt="${cards[4].Name}" style="display: block;">`;
             break;
         case 'heirophant':
-            cardChoice.innerHTML = `<h3>${cards[5].Name}</h3><img src="${cards[5].img}" alt="${cards[5].Name}" style="display: block;"><h4>${cards[5].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[5].Name}</h3><img src="${cards[5].img}" alt="${cards[5].Name}" style="display: block;">`;
             break;
         case 'lovers':
-            cardChoice.innerHTML = `<h3>${cards[6].Name}</h3><img src="${cards[6].img}" alt="${cards[6].Name}" style="display: block;"><h4>${cards[6].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[6].Name}</h3><img src="${cards[6].img}" alt="${cards[6].Name}" style="display: block;">`;
             break;
         case 'chariot':
-            cardChoice.innerHTML = `<h3>${cards[7].Name}</h3><img src="${cards[7].img}" alt="${cards[7].Name}" style="display: block;"><h4>${cards[7].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[7].Name}</h3><img src="${cards[7].img}" alt="${cards[7].Name}" style="display: block;">`;
             break;
         case 'strength':
-            cardChoice.innerHTML = `<h3>${cards[8].Name}</h3><img src="${cards[8].img}" alt="${cards[8].Name}" style="display: block;"><h4>${cards[8].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[8].Name}</h3><img src="${cards[8].img}" alt="${cards[8].Name}" style="display: block;">`;
             break;
         case 'hermit':
-            cardChoice.innerHTML = `<h3>${cards[9].Name}</h3><img src="${cards[9].img}" alt="${cards[9].Name}" style="display: block;"><h4>${cards[9].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[9].Name}</h3><img src="${cards[9].img}" alt="${cards[9].Name}" style="display: block;">`;
             break;
         case 'wheel':
-            cardChoice.innerHTML = `<h3>${cards[10].Name}</h3><img src="${cards[10].img}" alt="${cards[10].Name}" style="display: block;"><h4>${cards[10].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[10].Name}</h3><img src="${cards[10].img}" alt="${cards[10].Name}" style="display: block;">`;
             break;
         case 'justice':
-            cardChoice.innerHTML = `<h3>${cards[11].Name}</h3><img src="${cards[11].img}" alt="${cards[11].Name}" style="display: block;"><h4>${cards[11].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[11].Name}</h3><img src="${cards[11].img}" alt="${cards[11].Name}" style="display: block;">`;
             break;
         case 'hanged':
-            cardChoice.innerHTML = `<h3>${cards[12].Name}</h3><img src="${cards[12].img}" alt="${cards[12].Name}" style="display: block;"><h4>${cards[12].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[12].Name}</h3><img src="${cards[12].img}" alt="${cards[12].Name}" style="display: block;">`;
             break;
         case 'death':
-            cardChoice.innerHTML = `<h3>${cards[13].Name}</h3><img src="${cards[13].img}" alt="${cards[13].Name}" style="display: block;"><h4>${cards[13].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[13].Name}</h3><img src="${cards[13].img}" alt="${cards[13].Name}" style="display: block;">`;
             break;
         case 'temprance':
-            cardChoice.innerHTML = `<h3>${cards[14].Name}</h3><img src="${cards[14].img}" alt="${cards[14].Name}" style="display: block;"><h4>${cards[14].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[14].Name}</h3><img src="${cards[14].img}" alt="${cards[14].Name}" style="display: block;">`;
             break;
         case 'devil':
-            cardChoice.innerHTML = `<h3>${cards[15].Name}</h3><img src="${cards[15].img}" alt="${cards[15].Name}" style="display: block;"><h4>${cards[15].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[15].Name}</h3><img src="${cards[15].img}" alt="${cards[15].Name}" style="display: block;">`;
             break;
         case 'tower':
-            cardChoice.innerHTML = `<h3>${cards[16].Name}</h3><img src="${cards[16].img}" alt="${cards[16].Name}" style="display: block;"><h4>${cards[16].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[16].Name}</h3><img src="${cards[16].img}" alt="${cards[16].Name}" style="display: block;">`;
             break;
         case 'star':
-            cardChoice.innerHTML = `<h3>${cards[17].Name}</h3><img src="${cards[17].img}" alt="${cards[17].Name}" style="display: block;"><h4>${cards[17].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[17].Name}</h3><img src="${cards[17].img}" alt="${cards[17].Name}" style="display: block;">`;
             break;
         case 'moon':
-            cardChoice.innerHTML = `<h3>${cards[18].Name}</h3><img src="${cards[18].img}" alt="${cards[18].Name}" style="display: block;"><h4>${cards[18].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[18].Name}</h3><img src="${cards[18].img}" alt="${cards[18].Name}" style="display: block;">`;
             break;
         case 'sun':
-            cardChoice.innerHTML = `<h3>${cards[19].Name}</h3><img src="${cards[19].img}" alt="${cards[19].Name}" style="display: block;"><h4>${cards[19].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[19].Name}</h3><img src="${cards[19].img}" alt="${cards[19].Name}" style="display: block;">`;
             break;
         case 'judgement':
-            cardChoice.innerHTML = `<h3>${cards[20].Name}</h3><img src="${cards[20].img}" alt="${cards[20].Name}" style="display: block;"><h4>${cards[20].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[20].Name}</h3><img src="${cards[20].img}" alt="${cards[20].Name}" style="display: block;">`;
             break;
         case 'world':
-            cardChoice.innerHTML = `<h3>${cards[21].Name}</h3><img src="${cards[21].img}" alt="${cards[21].Name}" style="display: block;"><h4>${cards[21].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[21].Name}</h3><img src="${cards[21].img}" alt="${cards[21].Name}" style="display: block;">`;
             break;
         case 'as':
-            cardChoice.innerHTML = `<h3>${cards[22].Name}</h3><img src="${cards[22].img}" alt="${cards[22].Name}" style="display: block;"><h4>${cards[22].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[22].Name}</h3><img src="${cards[22].img}" alt="${cards[22].Name}" style="display: block;">`;
             break;
         case '2s':
-            cardChoice.innerHTML = `<h3>${cards[23].Name}</h3><img src="${cards[23].img}" alt="${cards[23].Name}" style="display: block;"><h4>${cards[23].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[23].Name}</h3><img src="${cards[23].img}" alt="${cards[23].Name}" style="display: block;">`;
             break;
         case '3s':
-            cardChoice.innerHTML = `<h3>${cards[24].Name}</h3><img src="${cards[24].img}" alt="${cards[24].Name}" style="display: block;"><h4>${cards[24].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[24].Name}</h3><img src="${cards[24].img}" alt="${cards[24].Name}" style="display: block;">`;
             break;
         case '4s':
-            cardChoice.innerHTML = `<h3>${cards[25].Name}</h3><img src="${cards[25].img}" alt="${cards[25].Name}" style="display: block;"><h4>${cards[25].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[25].Name}</h3><img src="${cards[25].img}" alt="${cards[25].Name}" style="display: block;">`;
             break;
         case '5s':
-            cardChoice.innerHTML = `<h3>${cards[26].Name}</h3><img src="${cards[26].img}" alt="${cards[26].Name}" style="display: block;"><h4>${cards[26].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[26].Name}</h3><img src="${cards[26].img}" alt="${cards[26].Name}" style="display: block;">`;
             break;
         case '6s':
-            cardChoice.innerHTML = `<h3>${cards[27].Name}</h3><img src="${cards[27].img}" alt="${cards[27].Name}" style="display: block;"><h4>${cards[27].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[27].Name}</h3><img src="${cards[27].img}" alt="${cards[27].Name}" style="display: block;">`;
             break;
         case '7s':
-            cardChoice.innerHTML = `<h3>${cards[28].Name}</h3><img src="${cards[28].img}" alt="${cards[28].Name}" style="display: block;"><h4>${cards[28].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[28].Name}</h3><img src="${cards[28].img}" alt="${cards[28].Name}" style="display: block;">`;
             break;
         case '8s':
-            cardChoice.innerHTML = `<h3>${cards[29].Name}</h3><img src="${cards[29].img}" alt="${cards[29].Name}" style="display: block;"><h4>${cards[29].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[29].Name}</h3><img src="${cards[29].img}" alt="${cards[29].Name}" style="display: block;">`;
             break;
         case '9s':
-            cardChoice.innerHTML = `<h3>${cards[30].Name}</h3><img src="${cards[30].img}" alt="${cards[30].Name}" style="display: block;"><h4>${cards[30].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[30].Name}</h3><img src="${cards[30].img}" alt="${cards[30].Name}" style="display: block;">`;
             break;
         case '10s':
-            cardChoice.innerHTML = `<h3>${cards[31].Name}</h3><img src="${cards[31].img}" alt="${cards[31].Name}" style="display: block;"><h4>${cards[31].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[31].Name}</h3><img src="${cards[31].img}" alt="${cards[31].Name}" style="display: block;">`;
             break;
         case 'ps':
-            cardChoice.innerHTML = `<h3>${cards[32].Name}</h3><img src="${cards[32].img}" alt="${cards[32].Name}" style="display: block;"><h4>${cards[32].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[32].Name}</h3><img src="${cards[32].img}" alt="${cards[32].Name}" style="display: block;">`;
             break;
         case 'kns':
-            cardChoice.innerHTML = `<h3>${cards[33].Name}</h3><img src="${cards[33].img}" alt="${cards[33].Name}" style="display: block;"><h4>${cards[33].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[33].Name}</h3><img src="${cards[33].img}" alt="${cards[33].Name}" style="display: block;">`;
             break;
         case 'qs':
-            cardChoice.innerHTML = `<h3>${cards[34].Name}</h3><img src="${cards[34].img}" alt="${cards[34].Name}" style="display: block;"><h4>${cards[34].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[34].Name}</h3><img src="${cards[34].img}" alt="${cards[34].Name}" style="display: block;">`;
             break;
         case 'ks':
-            cardChoice.innerHTML = `<h3>${cards[35].Name}</h3><img src="${cards[35].img}" alt="${cards[35].Name}" style="display: block;"><h4>${cards[35].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[35].Name}</h3><img src="${cards[35].img}" alt="${cards[35].Name}" style="display: block;">`;
             break;
         case 'aw':
-            cardChoice.innerHTML = `<h3>${cards[36].Name}</h3><img src="${cards[36].img}" alt="${cards[36].Name}" style="display: block;"><h4>${cards[36].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[36].Name}</h3><img src="${cards[36].img}" alt="${cards[36].Name}" style="display: block;">`;
             break;
         case '2w':
-            cardChoice.innerHTML = `<h3>${cards[37].Name}</h3><img src="${cards[37].img}" alt="${cards[37].Name}" style="display: block;"><h4>${cards[37].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[37].Name}</h3><img src="${cards[37].img}" alt="${cards[37].Name}" style="display: block;">`;
             break;
         case '3w':
-            cardChoice.innerHTML = `<h3>${cards[38].Name}</h3><img src="${cards[38].img}" alt="${cards[38].Name}" style="display: block;"><h4>${cards[38].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[38].Name}</h3><img src="${cards[38].img}" alt="${cards[38].Name}" style="display: block;">`;
             break;
         case '4w':
-            cardChoice.innerHTML = `<h3>${cards[39].Name}</h3><img src="${cards[39].img}" alt="${cards[39].Name}" style="display: block;"><h4>${cards[39].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[39].Name}</h3><img src="${cards[39].img}" alt="${cards[39].Name}" style="display: block;">`;
             break;
         case '5w':
-            cardChoice.innerHTML = `<h3>${cards[40].Name}</h3><img src="${cards[40].img}" alt="${cards[40].Name}" style="display: block;"><h4>${cards[40].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[40].Name}</h3><img src="${cards[40].img}" alt="${cards[40].Name}" style="display: block;">`;
             break;
         case '6w':
-            cardChoice.innerHTML = `<h3>${cards[41].Name}</h3><img src="${cards[41].img}" alt="${cards[41].Name}" style="display: block;"><h4>${cards[41].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[41].Name}</h3><img src="${cards[41].img}" alt="${cards[41].Name}" style="display: block;">`;
             break;
         case '7w':
-            cardChoice.innerHTML = `<h3>${cards[42].Name}</h3><img src="${cards[42].img}" alt="${cards[42].Name}" style="display: block;"><h4>${cards[42].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[42].Name}</h3><img src="${cards[42].img}" alt="${cards[42].Name}" style="display: block;">`;
             break;
         case '8w':
-            cardChoice.innerHTML = `<h3>${cards[43].Name}</h3><img src="${cards[43].img}" alt="${cards[43].Name}" style="display: block;"><h4>${cards[43].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[43].Name}</h3><img src="${cards[43].img}" alt="${cards[43].Name}" style="display: block;">`;
             break;
         case '9w':
-            cardChoice.innerHTML = `<h3>${cards[44].Name}</h3><img src="${cards[44].img}" alt="${cards[44].Name}" style="display: block;"><h4>${cards[44].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[44].Name}</h3><img src="${cards[44].img}" alt="${cards[44].Name}" style="display: block;">`;
             break;
         case '10w':
-            cardChoice.innerHTML = `<h3>${cards[45].Name}</h3><img src="${cards[45].img}" alt="${cards[45].Name}" style="display: block;"><h4>${cards[45].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[45].Name}</h3><img src="${cards[45].img}" alt="${cards[45].Name}" style="display: block;">`;
             break;
         case 'pw':
-            cardChoice.innerHTML = `<h3>${cards[46].Name}</h3><img src="${cards[46].img}" alt="${cards[46].Name}" style="display: block;"><h4>${cards[46].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[46].Name}</h3><img src="${cards[46].img}" alt="${cards[46].Name}" style="display: block;">`;
             break;
         case 'knw':
-            cardChoice.innerHTML = `<h3>${cards[47].Name}</h3><img src="${cards[47].img}" alt="${cards[47].Name}" style="display: block;"><h4>${cards[47].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[47].Name}</h3><img src="${cards[47].img}" alt="${cards[47].Name}" style="display: block;">`;
             break;
         case 'qw':
-            cardChoice.innerHTML = `<h3>${cards[48].Name}</h3><img src="${cards[48].img}" alt="${cards[48].Name}" style="display: block;"><h4>${cards[48].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[48].Name}</h3><img src="${cards[48].img}" alt="${cards[48].Name}" style="display: block;">`;
             break;
         case 'kw':
-            cardChoice.innerHTML = `<h3>${cards[49].Name}</h3><img src="${cards[49].img}" alt="${cards[49].Name}" style="display: block;"><h4>${cards[49].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[49].Name}</h3><img src="${cards[49].img}" alt="${cards[49].Name}" style="display: block;">`;
             break;
 
         case 'ap':
-            cardChoice.innerHTML = `<h3>${cards[50].Name}</h3><img src="${cards[50].img}" alt="${cards[50].Name}" style="display: block;"><h4>${cards[50].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[50].Name}</h3><img src="${cards[50].img}" alt="${cards[50].Name}" style="display: block;">`;
             break;
         case '2p':
-            cardChoice.innerHTML = `<h3>${cards[51].Name}</h3><img src="${cards[51].img}" alt="${cards[51].Name}" style="display: block;"><h4>${cards[51].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[51].Name}</h3><img src="${cards[51].img}" alt="${cards[51].Name}" style="display: block;">`;
             break;
         case '3p':
-            cardChoice.innerHTML = `<h3>${cards[52].Name}</h3><img src="${cards[52].img}" alt="${cards[52].Name}" style="display: block;"><h4>${cards[52].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[52].Name}</h3><img src="${cards[52].img}" alt="${cards[52].Name}" style="display: block;">`;
             break;
         case '4p':
-            cardChoice.innerHTML = `<h3>${cards[53].Name}</h3><img src="${cards[53].img}" alt="${cards[53].Name}" style="display: block;"><h4>${cards[53].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[53].Name}</h3><img src="${cards[53].img}" alt="${cards[53].Name}" style="display: block;">`;
             break;
         case '5p':
-            cardChoice.innerHTML = `<h3>${cards[54].Name}</h3><img src="${cards[54].img}" alt="${cards[54].Name}" style="display: block;"><h4>${cards[54].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[54].Name}</h3><img src="${cards[54].img}" alt="${cards[54].Name}" style="display: block;">`;
             break;
         case '6p':
-            cardChoice.innerHTML = `<h3>${cards[55].Name}</h3><img src="${cards[55].img}" alt="${cards[55].Name}" style="display: block;"><h4>${cards[55].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[55].Name}</h3><img src="${cards[55].img}" alt="${cards[55].Name}" style="display: block;">`;
             break;
         case '7p':
-            cardChoice.innerHTML = `<h3>${cards[56].Name}</h3><img src="${cards[56].img}" alt="${cards[56].Name}" style="display: block;"><h4>${cards[56].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[56].Name}</h3><img src="${cards[56].img}" alt="${cards[56].Name}" style="display: block;">`;
             break;
         case '8p':
-            cardChoice.innerHTML = `<h3>${cards[57].Name}</h3><img src="${cards[57].img}" alt="${cards[57].Name}" style="display: block;"><h4>${cards[57].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[57].Name}</h3><img src="${cards[57].img}" alt="${cards[57].Name}" style="display: block;">`;
             break;
         case '9p':
-            cardChoice.innerHTML = `<h3>${cards[58].Name}</h3><img src="${cards[58].img}" alt="${cards[58].Name}" style="display: block;"><h4>${cards[58].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[58].Name}</h3><img src="${cards[58].img}" alt="${cards[58].Name}" style="display: block;">`;
             break;
         case '10p':
-            cardChoice.innerHTML = `<h3>${cards[59].Name}</h3><img src="${cards[59].img}" alt="${cards[59].Name}" style="display: block;"><h4>${cards[59].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[59].Name}</h3><img src="${cards[59].img}" alt="${cards[59].Name}" style="display: block;">`;
             break;
         case 'pp':
-            cardChoice.innerHTML = `<h3>${cards[60].Name}</h3><img src="${cards[60].img}" alt="${cards[60].Name}" style="display: block;"><h4>${cards[60].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[60].Name}</h3><img src="${cards[60].img}" alt="${cards[60].Name}" style="display: block;">`;
             break;
         case 'knp':
             cardChoice.innerHTML = `<h3>${cards[61].Name}</h3><img src="${cards[61].img}" alt="${cards[61].Name}" style="display: block;">`;
