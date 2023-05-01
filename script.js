@@ -1,5 +1,6 @@
+// import cards from './cards.js';
 
-cards = [ 
+const cards = [ 
     { Name: 'Fool 0', img: "./untitled folder/sm_RWSa-T-00.png", text: 'this is the description of the card' },
     { Name: 'The Magician I', img: './untitled folder/sm_RWSa-T-01.png', text: 'this is the description of the card' },
     { Name: 'The High Priestess II', img: "./untitled folder/sm_RWSa-T-02.png", text: 'this is the description of the card' },
@@ -81,9 +82,7 @@ cards = [
 
 ]
 
-        
-    
-  
+
 
 const button = document.querySelector(".button");
 const cardChoice = document.querySelector(".card-choice"); 
@@ -95,7 +94,7 @@ button.addEventListener('click', function (){
     let randomCard = cards[randomIndex];
     const cardName = randomCard.Name
     console.log(cardName)
-    cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;"><h4>${randomCard.text}<h4>`
+    cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`
     getResponse(cardName);
 
 });
@@ -296,56 +295,56 @@ dropDown.addEventListener('change', function (){
             cardChoice.innerHTML = `<h3>${cards[60].Name}</h3><img src="${cards[60].img}" alt="${cards[60].Name}" style="display: block;"><h4>${cards[60].text}<h4>`;
             break;
         case 'knp':
-            cardChoice.innerHTML = `<h3>${cards[61].Name}</h3><img src="${cards[61].img}" alt="${cards[61].Name}" style="display: block;"><h4>${cards[61].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[61].Name}</h3><img src="${cards[61].img}" alt="${cards[61].Name}" style="display: block;">`;
             break;
         case 'qp':
-            cardChoice.innerHTML = `<h3>${cards[62].Name}</h3><img src="${cards[62].img}" alt="${cards[62].Name}" style="display: block;"><h4>${cards[62].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[62].Name}</h3><img src="${cards[62].img}" alt="${cards[62].Name}" style="display: block;">`;
             break;
         case 'kp':
-            cardChoice.innerHTML = `<h3>${cards[63].Name}</h3><img src="${cards[63].img}" alt="${cards[63].Name}" style="display: block;"><h4>${cards[63].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[63].Name}</h3><img src="${cards[63].img}" alt="${cards[63].Name}" style="display: block;">`;
 
         case 'ac':
-            cardChoice.innerHTML = `<h3>${cards[64].Name}</h3><img src="${cards[64].img}" alt="${cards[64].Name}" style="display: block;"><h4>${cards[64].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[64].Name}</h3><img src="${cards[64].img}" alt="${cards[64].Name}" style="display: block;">`;
             break;
         case '2c':
-            cardChoice.innerHTML = `<h3>${cards[65].Name}</h3><img src="${cards[65].img}" alt="${cards[65].Name}" style="display: block;"><h4>${cards[65].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[65].Name}</h3><img src="${cards[65].img}" alt="${cards[65].Name}" style="display: block;">`;
             break;
         case '3c':
-            cardChoice.innerHTML = `<h3>${cards[66].Name}</h3><img src="${cards[66].img}" alt="${cards[66].Name}" style="display: block;"><h4>${cards[66].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[66].Name}</h3><img src="${cards[66].img}" alt="${cards[66].Name}" style="display: block;">`;
             break;
         case '4c':
-            cardChoice.innerHTML = `<h3>${cards[67].Name}</h3><img src="${cards[67].img}" alt="${cards[67].Name}" style="display: block;"><h4>${cards[67].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[67].Name}</h3><img src="${cards[67].img}" alt="${cards[67].Name}" style="display: block;">`;
             break;
         case '5c':
-            cardChoice.innerHTML = `<h3>${cards[68].Name}</h3><img src="${cards[68].img}" alt="${cards[68].Name}" style="display: block;"><h4>${cards[68].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[68].Name}</h3><img src="${cards[68].img}" alt="${cards[68].Name}" style="display: block;">`;
             break;
         case '6c':
-            cardChoice.innerHTML = `<h3>${cards[69].Name}</h3><img src="${cards[69].img}" alt="${cards[69].Name}" style="display: block;"><h4>${cards[69].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[69].Name}</h3><img src="${cards[69].img}" alt="${cards[69].Name}" style="display: block;">`;
             break;
         case '7c':
-            cardChoice.innerHTML = `<h3>${cards[70].Name}</h3><img src="${cards[70].img}" alt="${cards[70].Name}" style="display: block;"><h4>${cards[70].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[70].Name}</h3><img src="${cards[70].img}" alt="${cards[70].Name}" style="display: block;">`;
             break;
         case '8c':
-            cardChoice.innerHTML = `<h3>${cards[71].Name}</h3><img src="${cards[71].img}" alt="${cards[71].Name}" style="display: block;"><h4>${cards[71].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[71].Name}</h3><img src="${cards[71].img}" alt="${cards[71].Name}" style="display: block;">`;
             break;
         case '9c':
-            cardChoice.innerHTML = `<h3>${cards[72].Name}</h3><img src="${cards[72].img}" alt="${cards[72].Name}" style="display: block;"><h4>${cards[72].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[72].Name}</h3><img src="${cards[72].img}" alt="${cards[72].Name}" style="display: block;">`;
             break;
         case '10c':
-            cardChoice.innerHTML = `<h3>${cards[73].Name}</h3><img src="${cards[73].img}" alt="${cards[73].Name}" style="display: block;"><h4>${cards[73].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[73].Name}</h3><img src="${cards[73].img}" alt="${cards[73].Name}" style="display: block;">`;
             break;
         case 'pc':
-            cardChoice.innerHTML = `<h3>${cards[74].Name}</h3><img src="${cards[74].img}" alt="${cards[74].Name}" style="display: block;"><h4>${cards[74].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[74].Name}</h3><img src="${cards[74].img}" alt="${cards[74].Name}" style="display: block;">`;
             break;
         case 'knc':
-            cardChoice.innerHTML = `<h3>${cards[75].Name}</h3><img src="${cards[75].img}" alt="${cards[75].Name}" style="display: block;"><h4>${cards[75].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[75].Name}</h3><img src="${cards[75].img}" alt="${cards[75].Name}" style="display: block;">`;
             break;
 
         case 'qc':
-            cardChoice.innerHTML = `<h3>${cards[76].Name}</h3><img src="${cards[76].img}" alt="${cards[76].Name}" style="display: block;"><h4>${cards[76].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[76].Name}</h3><img src="${cards[76].img}" alt="${cards[76].Name}" style="display: block;">`;
             break;
         case 'kc':
-            cardChoice.innerHTML = `<h3>${cards[77].Name}</h3><img src="${cards[77].img}" alt="${cards[77].Name}" style="display: block;"><h4>${cards[77].text}<h4>`;
+            cardChoice.innerHTML = `<h3>${cards[77].Name}</h3><img src="${cards[77].img}" alt="${cards[77].Name}" style="display: block;">`;
             break;
     }
     getResponse(selectValue)
