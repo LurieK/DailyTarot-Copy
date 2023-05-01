@@ -134,22 +134,36 @@ h2{
   .title::before {
     background-size: cover;
     background-position-x: center;
+    opacity: 0.5;
   }
 
   .title {
-    padding: 40px;
+    padding: 40px 40px 200px 40px;
   }
 
   h1 {
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 175px;
+    font-size: 250px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Arimo';
+    font-weight: 600;
   }
 
+  button {
+    height: 85px;
+    font-size: 44px;
+  }
+
+  .mycard {
+    height: 85px;
+    font-size: 44px;
+    
+  }
+  
   h3 {
     font-size: 40px;
   }
@@ -157,6 +171,8 @@ h2{
   h3 img {
     width: 50%;
   }
+
+
 }
 
 
