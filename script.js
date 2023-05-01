@@ -96,6 +96,7 @@ button.addEventListener('click', function (){
     console.log(cardName)
     cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`
     getResponse(cardName);
+    
 
 });
 
@@ -348,6 +349,7 @@ dropDown.addEventListener('change', function (){
             break;
     }
     getResponse(selectValue)
+    
 })
 
 
@@ -381,9 +383,17 @@ try {
 
 function displayMeaning(meaning){
     const cardMeaning = document.getElementById('card-meaning');
-    
+    const windowHeight = window.innerHeight;
+
     const dailyReading = 
     `<h4> ${meaning}</h4>`;
 
     cardMeaning.innerHTML = dailyReading;
+
+    const offsetTop = cardMeaning.offsetTop;
+    const adjustedOffsetTop = offsetTop - windowHeight/2;
+    window.scrollTo({
+        top: adjustedOffsetTop,
+        behavior: 'smooth'
+    });
 }
