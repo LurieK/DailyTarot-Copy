@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(0, 0%, 96%);
+  background-color: whitesmoke;
   font-size: 0.9rem;
   color: rgb(49, 6, 87);
 }
@@ -54,7 +54,7 @@ h3{
   background-image: url(./img/viva-luna-studios-1dIh5H5BMvI-unsplash.jpg);
   background-size: 175%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: right;
   opacity: 0.6;
   z-index: -1;
@@ -132,13 +132,13 @@ h2{
 
 @media screen and (max-width: 1000px){
   .title::before {
-    background-size: cover;
     background-position-x: center;
     opacity: 0.5;
+    background-size: cover;
   }
 
   .title {
-    padding: 448px 40px 3500px 40px;
+    padding: 448px 40px 40px 40px;
   }
 
   h1 {
