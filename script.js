@@ -95,6 +95,16 @@ button.addEventListener('click', function (){
     const cardName = randomCard.Name
     console.log(cardName)
     cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`
+    
+    setTimeout(() => {
+        const offsetTop = cardMeaning.offsetTop;
+        const adjustedOffsetTop = offsetTop - windowHeight / 2;
+        window.scrollTo({
+          top: adjustedOffsetTop,
+          behavior: 'smooth'
+        });
+      }, 0);
+    
     getResponse(cardName);
     
 
@@ -369,7 +379,7 @@ const options = {
         for the day. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.`
 	})
 };
-
+displayLoading();
 try {
 	const response = await fetch(url, options);
 	const result = await response.text();
@@ -399,3 +409,9 @@ function displayMeaning(meaning){
         });
       }, 0);
 }
+
+function displayLoading() {
+    const cardMeaning = document.getElementById('card-meaning');
+    cardMeaning.innerHTML = '<div class="spinner"></div>';  
+}
+
