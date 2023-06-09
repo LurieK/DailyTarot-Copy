@@ -390,10 +390,12 @@ function displayMeaning(meaning){
 
     cardMeaning.innerHTML = dailyReading;
 
-    const offsetTop = cardMeaning.offsetTop;
-    const adjustedOffsetTop = offsetTop - windowHeight/2;
-    window.scrollTo({
-        top: adjustedOffsetTop,
-        behavior: 'smooth'
-    });
+    setTimeout(() => {
+        const offsetTop = cardMeaning.offsetTop;
+        const adjustedOffsetTop = offsetTop - windowHeight / 2;
+        window.scrollTo({
+          top: adjustedOffsetTop,
+          behavior: 'smooth'
+        });
+      }, 0);
 }
