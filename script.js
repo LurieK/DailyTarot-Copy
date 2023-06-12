@@ -86,7 +86,7 @@ const cards = [
 
 const button = document.querySelector(".button");
 const cardChoice = document.querySelector(".card-choice"); 
-
+const cardMeaning = document.getElementById('card-meaning');
 
 
 button.addEventListener('click', function (){
@@ -96,10 +96,14 @@ button.addEventListener('click', function (){
     console.log(cardName)
     cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`
     
+    const cardImg = cardChoice.querySelector('img');
+    cardImg.addEventListener('load', function() {
     cardChoice.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end'   
+      behavior: 'smooth',
+      block: 'end'
     });
+})
+   
     
     getResponse(cardName);
     
@@ -115,7 +119,7 @@ const dropDown = document.querySelector('.mycard');
 
 dropDown.addEventListener('change', function (){
     const selectValue= this.value;
-
+//is there a better way to do this?
     switch (selectValue) {
         case 'fool':
             cardChoice.innerHTML = `<h3>${cards[0].Name}</h3><img src="${cards[0].img}" alt="${cards[0].Name}" style="display: block;">`;
@@ -388,7 +392,7 @@ try {
 }
 
 function displayMeaning(meaning){
-    const cardMeaning = document.getElementById('card-meaning');
+    // const cardMeaning = document.getElementById('card-meaning');
     const windowHeight = window.innerHeight;
 
     const dailyReading = 
@@ -396,18 +400,11 @@ function displayMeaning(meaning){
 
     cardMeaning.innerHTML = dailyReading;
 
-    // setTimeout(() => {
-    //     const offsetTop = cardMeaning.offsetTop;
-    //     const adjustedOffsetTop = offsetTop - windowHeight / 2;
-    //     window.scrollTo({
-    //       top: adjustedOffsetTop,
-    //       behavior: 'smooth'
-    //     });
-    //   }, 0);
+
 }
 
 function displayLoading() {
-    const cardMeaning = document.getElementById('card-meaning');
+    // const cardMeaning = document.getElementById('card-meaning');
     cardMeaning.innerHTML = '<div class="spinner"></div>';  
 }
 
