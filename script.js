@@ -121,7 +121,8 @@ dropDown.addEventListener('change', function (){
     const selectValue= this.value;
     const selectIndex = cards.findIndex(card => card.Name === selectValue);
     const selectedCard = cards[selectIndex];
-    cardChoice.innerHTML = `<h3>${selectedCard.Name}</h3><img src="${selectedCard.img}" alt="${selectedCard.Name}" style="display: block;">`
+    console.log(selectedCard)
+    cardChoice.innerHTML = `<h3>${selectedCard.Name}</h3><img src="${selectedCard.img}" alt="${selectedCard.Name}" style="display: block;">`;
 //is there a better way to do this?
     // switch (selectValue) {
     //     case 'fool':
@@ -361,6 +362,7 @@ dropDown.addEventListener('change', function (){
     //         cardChoice.innerHTML = `<h3>${cards[77].Name}</h3><img src="${cards[77].img}" alt="${cards[77].Name}" style="display: block;">`;
     //         break;
     // }
+    
     getResponse(selectValue)
     
 })
