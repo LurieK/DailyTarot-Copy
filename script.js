@@ -96,14 +96,10 @@ button.addEventListener('click', function (){
     console.log(cardName)
     cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`
     
-    setTimeout(() => {
-        const offsetTop = cardMeaning.offsetTop;
-        const adjustedOffsetTop = offsetTop - windowHeight / 2;
-        window.scrollTo({
-          top: adjustedOffsetTop,
-          behavior: 'smooth'
-        });
-      }, 0);
+    cardChoice.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'   
+    });
     
     getResponse(cardName);
     
@@ -400,14 +396,14 @@ function displayMeaning(meaning){
 
     cardMeaning.innerHTML = dailyReading;
 
-    setTimeout(() => {
-        const offsetTop = cardMeaning.offsetTop;
-        const adjustedOffsetTop = offsetTop - windowHeight / 2;
-        window.scrollTo({
-          top: adjustedOffsetTop,
-          behavior: 'smooth'
-        });
-      }, 0);
+    // setTimeout(() => {
+    //     const offsetTop = cardMeaning.offsetTop;
+    //     const adjustedOffsetTop = offsetTop - windowHeight / 2;
+    //     window.scrollTo({
+    //       top: adjustedOffsetTop,
+    //       behavior: 'smooth'
+    //     });
+    //   }, 0);
 }
 
 function displayLoading() {
