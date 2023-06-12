@@ -4,8 +4,6 @@ body {
   color: rgb(49, 6, 87);
 }
 
-
-
 h1 {
   font-family: 'Almendra', serif;
   font-size: 125px;
@@ -23,7 +21,6 @@ h3 {
   font-size: 30px;
 }
 
-
 h3 {
   display: flex;
   align-items: center;
@@ -33,7 +30,6 @@ h3 {
 }
 
 #title h1 {
-
   font-size: 125px;
   color: rgba(97, 6, 97, 0.75);
   text-align: center;
@@ -46,8 +42,6 @@ h3 {
   z-index: 1;
   padding: 60px 20px 150px 20px;
 }
-
-
 
 .title::before {
   content: '';
@@ -70,13 +64,11 @@ h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 button {
   height: 65px;
   font-size: 22px;
-
   color: rgb(232, 229, 235);
   cursor: pointer;
   padding: 0 20px;
@@ -92,7 +84,6 @@ h2 {
   justify-content: center;
 }
 
-
 .mycard {
   height: 65px;
   font-size: 22px;
@@ -101,8 +92,6 @@ h2 {
   padding: 0 15px;
   background: rgb(217, 214, 221);
   border-color: rgb(49, 6, 87);
-
-
 }
 
 .card-meaning {
@@ -114,22 +103,7 @@ h2 {
   font-size: 20px;
   font-weight: 100;
   font-family: 'Arimo', sans-serif;
-
-
 }
-
-/* form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-} */
-
-/* textarea {
-  width: 20rem;
-  height: 20rem;
-  
-} */
 
 .spinner {
   width: 50px;
@@ -178,7 +152,6 @@ h2 {
   .mycard {
     height: 85px;
     font-size: 44px;
-
   }
 
   h3 {
@@ -192,6 +165,4 @@ h2 {
   h4 {
     font-size: 50px;
   }
-
-
 }
