@@ -54,7 +54,6 @@ h3{
   background-image: url(./img/viva-luna-studios-1dIh5H5BMvI-unsplash.jpg);
   background-size: 175%;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: right;
   opacity: 0.6;
   z-index: -1;
@@ -192,23 +191,5 @@ h2{
 
 
 }
-
-
-
-
-
-
-
-
-/* form button {
-  height: 35px;
-  font-size: 15px;
-  color:rgb(232, 229, 235);
-  cursor: pointer;
-  padding: 0 20px;
-  margin-top: 10px;
-  background: rgb(49, 6, 87);
-  border: none;
-} */
 
 
