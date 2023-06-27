@@ -1,5 +1,4 @@
 const cards = [
-    { Name: "Fool 0", value: "", img: "" },
     {
       Name: "The Fool",
       value: "fool",
