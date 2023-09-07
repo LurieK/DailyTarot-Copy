@@ -36,7 +36,11 @@ dropDown.addEventListener("change", function () {
 
 async function getResponse(card) {
 
-  const url = `https://daily-tarot.vercel.app/tarot?card=${card}`;
+  if (window.location.hostname === 'localhost') {
+    url = `http://localhost:5500/tarot?card=${card}`;
+  } else {
+    url = `https://daily-tarot.vercel.app/tarot?card=${card}`;
+  }  console.log("Fetching URL: ", url); 
 
   displayLoading();
   try {

@@ -14,6 +14,7 @@ const API_KEY = process.env.API_KEY;
 
 app.get('/tarot', async (req, res)=>{
     const {card} = req.query; 
+    console.log("Received card: ", card);
     const url = "https://chatgpt-ai-chat-bot.p.rapidapi.com/ask";
     const options = {
         method: "POST",
@@ -31,6 +32,7 @@ app.get('/tarot', async (req, res)=>{
     try {
         const response = await fetch(url, options);
         const result = await response.json();
+        console.log("API Response: ", result);
         res.json(result);
     }catch (error) {
         console.error(error);
@@ -38,3 +40,9 @@ app.get('/tarot', async (req, res)=>{
     }
 }
 );
+
+
+const port = 5500; 
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
