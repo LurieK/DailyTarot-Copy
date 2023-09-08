@@ -1,8 +1,11 @@
 {
     "version": 2,
     "builds": [
-      { "src": "server.mjs", "use": "@vercel/node" }
-    ]
+      { "src": "DailyTarot/server.mjs", "use": "@vercel/node" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "DailyTarot/server.mjs" }
+      ]
    
     
   }
