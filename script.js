@@ -48,6 +48,7 @@ async function getResponse(card) {
   displayLoading();
   try {
     const response = await fetch(url);
+    console.log(response)
     const result = await response.json();
     const resultText = result.response;
     displayMeaning(resultText);

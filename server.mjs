@@ -7,6 +7,9 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors(corsOptions));
+
+
 app.use(cors());
 
 const API_KEY = process.env.API_KEY;
