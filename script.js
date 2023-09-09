@@ -42,8 +42,6 @@ async function getResponse(card) {
     url = `https://daily-tarot.vercel.app/tarot?card=${card}`;
   }  console.log("Fetching URL: ", url); 
 
-  // let url = `https://daily-tarot.vercel.app/tarot?card=${card}`;
-
 
   displayLoading();
   try {
