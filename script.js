@@ -35,7 +35,7 @@ dropDown.addEventListener("change", function () {
 });
 
 async function getResponse(card) {
-  let url = 
+  let url 
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     url = `http://localhost:5500/tarot?card=${card}`;
   } else {
