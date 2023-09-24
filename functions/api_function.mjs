@@ -26,7 +26,7 @@ export const handler = async function(event, context) {
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*", // Update this to match your front-end URL in production
+        "Access-Control-Allow-Origin": "*", 
       },
       body: JSON.stringify(result),
     };

@@ -39,7 +39,7 @@ async function getResponse(card) {
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     url = `http://localhost:5500/tarot?card=${card}`;
   } else {
-    url = `https://famous-pithivier-c2c9b0.netlify.app/tarot?card=${card}`;
+    url = `https://famous-pithivier-c2c9b0.netlify.app/.netlify/functions/api_function?card=${card}`;
   }  console.log("Fetching URL: ", url); 
 
 
