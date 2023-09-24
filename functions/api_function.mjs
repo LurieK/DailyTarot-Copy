@@ -3,7 +3,7 @@ import { config } from 'dotenv';
 
 config();
 
-exports.handler = async function(event, context) {
+export const handler = async function(event, context) {
   const { card } = event.queryStringParameters;
   const API_KEY = process.env.API_KEY;
   const url = "https://chatgpt-ai-chat-bot.p.rapidapi.com/ask";

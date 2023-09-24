@@ -4,7 +4,7 @@
   "description": "A daily tarot card app",
   "main": "server.mjs",
   "scripts": {
-    "start": "node functions/api_function.js",
+    "start": "node functions/api_function.mjs",
     "dev": "nodemon server.mjs"
     
   },
