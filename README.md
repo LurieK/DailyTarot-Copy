@@ -4,7 +4,7 @@ Certainly! Here's the updated README file based on the template you provided:
 
 # Daily Tarot
 
-This is a web application that allows users to select a tarot card from a dropdown menu or to have one randomly selected. It then provides a prediction for the day based on the meaning of the selected card. The predictions are generated using the **ChatGPT Ai Chat bot API**, with the requests to the API handled server-side in a **Netlify Function**. The server-side application is **asynchronous, using JavaScript's async/await syntax** for handling promises. The API key for the ChatGPT service is securely stored in a `.env` file and accessed via the `dotenv` package. 
+This website allows users to select a tarot card from a dropdown menu or to have one randomly selected. It then provides a prediction for the day based on the meaning of the selected card. The predictions are generated using the **ChatGPT Ai Chatbot API**. With an established **Node.js** server-- using **Express.js**, and the API key stored securely in a '.env' file (accessed via the 'dotenv' package)-- Requests are sent to the API handled server-side in a **Netlify Function**. The server-side application is **asynchronous, using JavaScript's async/await syntax** for handling promises.
 
 <div align="center">
   <img src="tarot_laptop.png" alt="Example Image" width="300" style="display:inline; margin-right:10px;"/>
@@ -19,7 +19,7 @@ Click "Select My Card" to have a random card selected for you.
 The dropdown menu allows users to select a card from a list of options. Each card is represented by the Raider Waite image of the card and its name.
 
 ### Card Prediction
-Once a card is selected, the application uses the selected card's name to make an API call to a tarot card meaning service. The API returns a prediction for the day based on the meaning of the selected card.
+Once a card is selected, the application uses the selected card's name to make an API call to ChatGPT and returns a prediction for the day based on the generated meaning of the selected card.
 
 ## Installation 
 
