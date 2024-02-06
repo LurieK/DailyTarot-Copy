@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node functions/api_function.mjs",
     "dev": "nodemon server.mjs"
-    
   },
   "dependencies": {
     "express": "^4.17.1",
