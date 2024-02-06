@@ -42,9 +42,9 @@ dropDown.addEventListener("change", function () {
 async function getResponse(card) {
   let url 
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    url = `http://localhost:5500/tarot?card=${card}`;
+    url = `http://localhost:5500/.netlify/functions/api_function?card=${card}`;
   } else {
-    url = `https://famous-pithivier-c2c9b0.netlify.app/.netlify/functions/api_function?card=${card}`;
+    url = `https://famous-pithivier-c2c9b0.netlify.app/.netlify/functions/api_functions?card=${card}`;
   }  console.log("Fetching URL: ", url); 
 
 
