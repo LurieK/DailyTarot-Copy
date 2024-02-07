@@ -52,11 +52,11 @@ async function getResponse(card) {
   displayLoading();
   try {
     const response = await fetch(url,{mode:'no-cors'});
-    console.log(response)
+    console.log(`this is the response ${response}`)
     const resultMessage = await response.json();
-    console.log(resultMessage)
+    console.log(`The response was parsed here it is ${resultMessage}`)
     const resultText = resultMessage.result;
-    console.log(resultText)
+    console.log(`This should also be on the DOM --${resultText}`)
    
     displayMeaning(resultText);
   } catch (error) {
