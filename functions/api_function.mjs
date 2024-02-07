@@ -48,7 +48,7 @@ try {
     return {
       statusCode: 200,
 	  headers: {
-                "Access-Control-Allow-Origin": "https://working-state--famous-pithivier-c2c9b0.netlify.app/", 
+                "Access-Control-Allow-Origin": '*', 
                 "Access-Control-Allow-Headers": "Content-Type", 
                 "Access-Control-Allow-Methods": "GET, POST, OPTIONS" 
             },
