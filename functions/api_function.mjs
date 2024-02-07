@@ -27,7 +27,8 @@ const options = {
 		messages: [
 			{
 				role: 'User_name',
-				content: `You are an expert Tarot reader. I will give you a card and you will tell me what it means as a prediction for the day. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.`
+				content: `You are an expert Tarot reader. I will give you a card and you will tell me what it means as a prediction for the day. Begin your message greeting me, and te
+				encouraging me. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.`
 			}
 		],
 		system_prompt: '',

@@ -53,9 +53,9 @@ async function getResponse(card) {
   try {
     const response = await fetch(url);
     console.log(response)
-    const result = await response.json();
-    console.log(result)
-    const resultText = result.result;
+    const resultMessage = await response.json();
+    console.log(resultMessage)
+    const resultText = resultMessage.result;
    
     displayMeaning(resultText);
   } catch (error) {
