@@ -5,11 +5,14 @@ import { config } from 'dotenv';
 
 // Load environment variables from a .env file into process.env
 config();
+
+
 export const handler = async function(event, context) {
 
 const { card } = event.queryStringParameters;
 //defind API from env
 const API_KEY = process.env.API_KEY;
+
 // get the API key from the environment variables
 const url = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
 
@@ -17,14 +20,14 @@ const options = {
 	method: 'POST',
 	headers: {
 		'content-type': 'application/json',
-		'X-RapidAPI-Key': "API_KEY",
+		'X-RapidAPI-Key': API_KEY,
 		'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com'
 	},
-	body: {
+	body: JSON.stringify ({
 		messages: [
 			{
 				role: 'User_name',
-				content: 'You are an expert Tarot reader. I will give you a card and you will tell me what it means as a prediction for the day. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.'
+				content: `You are an expert Tarot reader. I will give you a card and you will tell me what it means as a prediction for the day. Please avoid negative readings and aim to inspire me with the meaning of the card. The card is the ${card}.`
 			}
 		],
 		system_prompt: '',
@@ -33,7 +36,7 @@ const options = {
 		top_p: 0.9,
 		max_tokens: 256,
 		web_access: false
-	}
+	})
 };
 
 try {
