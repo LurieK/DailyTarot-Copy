@@ -51,7 +51,7 @@ async function getResponse(card) {
   //run displayLoading spinner defined below
   displayLoading();
   try {
-    const response = await fetch(url, {'no-cors'});
+    const response = await fetch(url,{mode:'no-cors'});
     console.log(response)
     const resultMessage = await response.json();
     console.log(resultMessage)
