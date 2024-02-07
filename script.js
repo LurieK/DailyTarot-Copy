@@ -35,7 +35,7 @@ dropDown.addEventListener("change", function () {
   const selectedCard = cards[selectIndex];
   //set the selected card to the DOM
   cardChoice.innerHTML = `<h3>${selectedCard.Name}</h3><img src="${selectedCard.img}" alt="${selectedCard.Name}" style="display: block;">`;
-  getResponse(selectValue);
+  getResponse(selectedCard);
 });
 
 //grab the definition of the card (either randomly selected or chosen from the dropdown) from function_api.mjs
