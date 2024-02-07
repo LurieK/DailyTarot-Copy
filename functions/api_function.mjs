@@ -12,6 +12,7 @@ export const handler = async function(event, context) {
 const { card } = event.queryStringParameters;
 //defind API from env
 const API_KEY = process.env.API_KEY;
+console.log(API_KEY)
 
 // get the API key from the environment variables
 const url = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';

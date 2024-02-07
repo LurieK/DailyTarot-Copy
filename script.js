@@ -56,6 +56,7 @@ async function getResponse(card) {
     const resultMessage = await response.json();
     console.log(resultMessage)
     const resultText = resultMessage.result;
+    console.log(resultText)
    
     displayMeaning(resultText);
   } catch (error) {
