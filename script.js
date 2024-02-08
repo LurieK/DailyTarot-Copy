@@ -1,5 +1,5 @@
 //import cards object
-import { cards } from './cards_array.js';
+import { cards } from "./cards_array.js";
 
 const button = document.querySelector(".button");
 const cardChoice = document.querySelector(".card-choice");
@@ -10,7 +10,7 @@ button.addEventListener("click", function () {
   let randomIndex = Math.floor(Math.random() * cards.length);
   let randomCard = cards[randomIndex];
   const cardName = randomCard.Name;
- 
+
   //set random card to the DOM
   cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`;
   //scroll the show the card
@@ -40,25 +40,29 @@ dropDown.addEventListener("change", function () {
 
 //grab the definition of the card (either randomly selected or chosen from the dropdown) from function_api.mjs
 async function getResponse(card) {
-  let url 
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  let url;
+  if (
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1"
+  ) {
     url = `http://localhost:8888/.netlify/functions/api_function?card=${card}`;
   } else {
     url = `https://famous-pithivier-c2c9b0.netlify.app/.netlify/functions/api_function?card=${card}`;
-  }  console.log("Fetching URL: ", url); 
-
+  }
+  console.log("Fetching URL: ", url);
 
   //run displayLoading spinner defined below
   displayLoading();
   try {
     const response = await fetch(url);
-    let resultText
-    if (response.status !== 200){
-      resultText= 'Oops! My guides are currently tangled in cosmic strings. Please try again later.';
-    }else {
+    let resultText;
+    if (response.status !== 200) {
+      resultText =
+        "Oops! My guides are currently tangled in cosmic strings. Please try again later.";
+    } else {
       const resultMessage = await response.json();
       resultText = resultMessage.result;
-   }
+    }
     displayMeaning(resultText);
   } catch (error) {
     console.error(error);
@@ -73,8 +77,7 @@ function displayMeaning(meaning) {
 }
 
 function displayLoading() {
-  cardMeaning.innerHTML = 
- ` <div class='loading'>
+  cardMeaning.innerHTML = ` <div class='loading'>
   <h3>Let me check with my guides . . . </h3>
   <div class="spinner"></div>
   </div>`;
