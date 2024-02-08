@@ -10,7 +10,7 @@ button.addEventListener("click", function () {
   let randomIndex = Math.floor(Math.random() * cards.length);
   let randomCard = cards[randomIndex];
   const cardName = randomCard.Name;
-  console.log(cardName);
+ 
   //set random card to the DOM
   cardChoice.innerHTML = `<h3>${randomCard.Name}</h3><img src="${randomCard.img}" alt="${randomCard.Name}" style="display: block;">`;
   //scroll the show the card
@@ -52,16 +52,12 @@ async function getResponse(card) {
   displayLoading();
   try {
     const response = await fetch(url);
-    console.log(`this is the response`)
-    console.log(response.status)
     let resultText
     if (response.status !== 200){
       resultText= 'Oops! My guides are currently tangled in cosmic strings. Please try again later.';
     }else {
       const resultMessage = await response.json();
-      console.log(`The response was parsed here it is ${resultMessage}`)
       resultText = resultMessage.result;
-      console.log(`This should also be on the DOM --${resultText}`)
    }
     displayMeaning(resultText);
   } catch (error) {
