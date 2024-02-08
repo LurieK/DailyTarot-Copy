@@ -14,7 +14,7 @@ const { card } = event.queryStringParameters;
 const API_KEY = process.env.API_KEY;
 console.log(API_KEY)
 
-// get the API key from the environment variables
+// get the API key RapidAPI variables
 const url = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
 
 const options = {

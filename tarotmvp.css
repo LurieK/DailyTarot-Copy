@@ -115,6 +115,12 @@ h2 {
   animation: s5 1s infinite linear;
 }
 
+.loading{
+  display:flex;
+  align-items: center;
+  flex-flow: column;
+}
+
 @keyframes s5 {
   100% {
     transform: rotate(1turn)

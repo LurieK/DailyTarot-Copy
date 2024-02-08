@@ -52,12 +52,17 @@ async function getResponse(card) {
   displayLoading();
   try {
     const response = await fetch(url);
-    console.log(`this is the response ${response}`)
-    const resultMessage = await response.json();
-    console.log(`The response was parsed here it is ${resultMessage}`)
-    const resultText = resultMessage.result;
-    console.log(`This should also be on the DOM --${resultText}`)
-   
+    console.log(`this is the response`)
+    console.log(response.status)
+    let resultText
+    if (response.status === 500){
+      resultText= 'Oops! My guides are currently tangled in cosmic strings. Please try again later.';
+    }else if (response.status === 200) {
+      const resultMessage = await response.json();
+      console.log(`The response was parsed here it is ${resultMessage}`)
+      resultText = resultMessage.result;
+      console.log(`This should also be on the DOM --${resultText}`)
+   }
     displayMeaning(resultText);
   } catch (error) {
     console.error(error);
@@ -72,5 +77,9 @@ function displayMeaning(meaning) {
 }
 
 function displayLoading() {
-  cardMeaning.innerHTML = '<div class="spinner"></div>';
+  cardMeaning.innerHTML = 
+ ` <div class='loading'>
+  <h3>Let me check with my guides . . . </h3>
+  <div class="spinner"></div>
+  </div>`;
 }
