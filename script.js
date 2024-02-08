@@ -55,9 +55,9 @@ async function getResponse(card) {
     console.log(`this is the response`)
     console.log(response.status)
     let resultText
-    if (response.status === 500){
+    if (response.status !== 200){
       resultText= 'Oops! My guides are currently tangled in cosmic strings. Please try again later.';
-    }else if (response.status === 200) {
+    }else {
       const resultMessage = await response.json();
       console.log(`The response was parsed here it is ${resultMessage}`)
       resultText = resultMessage.result;
